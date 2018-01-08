@@ -1,13 +1,15 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
 
-function heartbeat (connection) {
-    return function (req, res) {
+function heartbeat(connection) {
+    return function(req, res) {
         connection.query("SHOW TABLES;", function(error, result) {
-            if(error) {
-                res.json(error);
+            if (error) {
+                res.status.json
+                // res.json(error)
+                //res.status(500).json
             }
-            res.json({"Result":"okay"})
+            res.json({result:"okay"})
         })
     }
 }
