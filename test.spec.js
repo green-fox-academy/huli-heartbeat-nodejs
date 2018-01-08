@@ -17,7 +17,7 @@ let connection = mysql.createConnection({
 app.get('/heartbeat', heartbeat(connection))
 
 describe('GET /heartbeat', function() {
-    it('respond with json', function(done) {
+    it('should respond with status', function(done) {
         request(app)
             .get('/heartbeat')
             .expect(200)
@@ -30,4 +30,16 @@ describe('GET /heartbeat', function() {
         })
     })
 
-
+// describe('GET /heartbeat', function() {
+//     it('should respond when error', function(done) {
+//         request(app)
+//             .get('/heartbeat')
+//             .expect(500)
+//             .then(function(){
+//                 done()
+//             })
+//             .catch(err => {
+//                 done(err)
+//             })
+//         })
+//     })
