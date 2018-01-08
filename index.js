@@ -5,7 +5,7 @@ function heartbeat(connection) {
     return function(req, res) {
         connection.query("SHOW TABLES;", function(error, result) {
             if (error) {
-                res.status.json
+                res.status(500)
                 // res.json(error)
                 //res.status(500).json
             }
