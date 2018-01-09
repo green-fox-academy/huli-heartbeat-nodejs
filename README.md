@@ -11,6 +11,7 @@ in command line. This will automatically add the package to your development dep
 
 ## Usage
 After installation open `config.js` and edit the server info.
+
 Require the package with
 ```javascript
 let heartbeat = require('./heartbeat')
