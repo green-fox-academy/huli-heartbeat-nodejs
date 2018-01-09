@@ -15,7 +15,7 @@ Require the package with
 ```javascript
 let heartbeat = require('./heartbeat')
 ```
-and insert the /heartbeat endpoint.
+and insert the '/heartbeat' endpoint
 ```javascript
 app.get('/heartbeat', heartbeat(connection))
 ```
