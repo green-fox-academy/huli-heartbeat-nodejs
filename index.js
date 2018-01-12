@@ -7,7 +7,7 @@ function heartbeat(connection) {
             if (error) {
                 res.status(500)
             }
-            res.json({result:"okay"})
+            res.json({result:'okay'})
         })
     }
 }
