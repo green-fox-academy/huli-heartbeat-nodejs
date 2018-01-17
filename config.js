@@ -1,10 +1,10 @@
 'use strict'
 
 let config = {
-    host: 'localhost',
-    user: 'root',
-    password: 'imanoodle',
-    database: 'fox_player'
+    host: $MYSQL_HOST,
+    user: $MYSQL_USER,
+    password: $MYSQL_PASSWORD,
+    database: $MYSQL_DATABASE
 }
 
 module.exports = config
