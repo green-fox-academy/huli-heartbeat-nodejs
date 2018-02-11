@@ -1,6 +1,6 @@
 {
   "name": "greenfox-heartbeat",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "repository": {
     "github": "https://github.com/greenfox-academy/huli-heartbeat-nodejs",
     "npm": "https://www.npmjs.com/package/greenfox-heartbeat"
